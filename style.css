@@ -51,7 +51,8 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    padding-bottom: 2%;
+    padding-bottom: 3%;
+    padding-top: 1%;
 
 }
 
