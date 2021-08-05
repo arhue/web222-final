@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+ * WEB222 – Assignment 05+Final
+ *
+ * I declare that this assignment is my own work in accordance with
+ * Seneca Academic Policy. No part of this assignment has been
+ * copied manually or electronically from any other source
+ * (including web sites) or distributed to other students.
+ *
+ * Please update the following with your information:
+ *
+ *      Name: Varun Vinay Sinai Priolkar
+ *      Student ID: 130974207
+ *      Date: 24 July 2021
+ *
+ * 
+ */
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Varun Sinai Priolkar</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+    <script src="https://kit.fontawesome.com/a2ab562c98.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+
+  <body>
+      <div id="top">
+          <img id="dp" src=mypic.png alt="My pic">
+          <h1 id="name">Varun Sinai Priolkar</h1>
+          <p id="desg">👋 Hi I'm Varun. Click below to know more about me.</p>
+          <div id="topbutton">
+    <a href="#education"><button id="b1">Resume</button></a>
+<a href="#form"><button id="b2">Contact me</button></a>
+          </div>
+      </div>
+
+      <div id="about">
+          <div id="about-me">
+              <h2>About me</h2>
+              <p>I am a DevOps and Network Engineer based out of Goa, India. I am learning programming at Seneca College and hope to improve my skills at writing code. I am also passionate about investing, weightlifting, motorsports and travelling. This page is more about who I am and what you can know about me.<p>
+              <p>I hope you find this information interesting. If you have any more info, feel free to contact me below. 🙂</p>
+          </div>
+          <div id="about-info">
+              <h2>Basic information</h2>
+              <p><b>Age:</b> 24</p>
+              <p><b>Email:</b> vvsinai-priolkar@myseneca.ca</p>
+              <p><b>Languages:</b> English, Hindi, Marathi, Konkani, Konkani(Mangalorian), Sanskrit.</p>
+          </div>
+      </div>
+      <div id="education">
+            <h2>Education</h2>
+            <div id="edu1">
+                <h3>Seneca College</h3>
+                <h4>2021-CURRENT</h4>
+                <p>Studying Computer Programming(CPP) at Seneca College.</p>
+            </div>
+            <br><br>
+            <div id="edu2">
+                <h3>Mushtifund Aryaan Higher Secondary School</h3>
+                <h4>2012-2014</h4>
+                <p>I completed my 11th and 12th grade education here.</p>
+            </div>
+        </div>
+        <div id="form">
+            <h2 id="formh">Contact Me</h2>
+            <form name="main" onsubmit="return(validate());" action="https://httpbin.org/post" method="post">
+                Name: <input type="text" name="Name"><br>
+                Email: <input type="text" name="Email"><br>
+                Address: <input type="text" name="Address"><br>
+                City: <input type="text" list="cities" name="city">
+                <datalist id="cities">
+                    <option value="Toronto">
+                    <option value="Vancouver">
+                    <option value="Calgary">
+                    <option value="Halifax">
+                    <option value="Victoria">
+                </datalist>
+                <br>Postal Code: <input type="text" name="Postal">
+                <br>What is this about?
+                <input type="radio" checked="true" onclick="javascript:rateCheck();" id="question" name="type" value="question"><label for="question">Question</label>
+                <input type="radio" onclick="javascript:rateCheck();" id="comment" name="type" value="comment"><label for="comment">Comment</label>
+                <input type="radio" onclick="javascript:rateCheck();" id="hiring" name="type" value="hiring"><label for="hiring">Hiring</label>
+                <br><div id="rate"><br>Rate: <input id="rateinput" type="input" name="rate"></div>
+                <br>Message:<br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+                  <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div id="footer">
+            <footer>WEB222 Assignment by Varun Sinai Priolkar.</footer>
+        </div>
+  </body>
+</html>

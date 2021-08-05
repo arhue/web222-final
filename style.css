@@ -1,0 +1,120 @@
+#top {
+    background-color: #0B91EA;
+    background-image: url("cloud.jpg");
+    color: white;
+    padding: 5%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#dp {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+}
+
+#name {
+    padding: 0px;
+    margin: 20px auto 0px auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+}
+
+#about-me {
+    width: 60%;
+    flex-grow: 2;
+    padding-right: 3%;
+}
+
+#about-info {
+    width: 40%;
+    flex-grow: 1;
+}
+
+#education {
+    background-color: #dcddde;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2%;
+
+}
+
+#edu1, #edu2 {
+    background-color: white;
+    width: 40%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#b2 {
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 13px 21px;
+    background-color: grey;
+    cursor: pointer;
+}
+
+#b2:hover {
+    background-color: #424141;
+}
+
+#rate {
+    display: none;
+}
+
+#form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+#rateinput, input[type=text], select, textarea {
+    margin-top: 7px;
+    margin-bottom: 17px;
+    padding: 13px;
+    width: 100%;
+    resize: vertical;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#b1, input[type=submit] {
+    padding: 13px 21px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6fbdfc;
+    color: white;
+    cursor: pointer;
+}
+
+#b1:hover, input[type=submit]:hover {
+    background-color: blue;
+}
+
+#formh{
+    text-align: center;
+}
+
+#footer {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+}
