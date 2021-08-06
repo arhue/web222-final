@@ -9,13 +9,6 @@ function validate() {
     var re = /\S+@\S+\.\S+/;
     var postal = /^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$/;
 
-
-   if(document.main.type.value=="hiring" && isNaN(document.main.rate.value)) {
-        alert("Enter valid hourly rate!");
-        document.main.Postal.focus();
-        return false;
-    }
-
     if(document.main.Name.value=="") {
         alert( "Please provide your name!" );
         document.main.Name.focus() ;
