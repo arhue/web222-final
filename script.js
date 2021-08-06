@@ -39,7 +39,7 @@ function validate() {
         return false;
     }
 
-    if(document.main.type.value=="hiring" && document.main.rate.value="") {
+    if(document.main.type.value=="hiring" && document.main.rate.value=="") {
         alert("Enter hourly rate!");
         document.main.rate.focus();
         return false;
