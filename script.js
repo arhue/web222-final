@@ -46,15 +46,21 @@ function validate() {
         return false;
     }
 
+    if(document.main.type.value=="hiring" && document.main.rate.value="") {
+        alert("Enter hourly rate!");
+        document.main.rate.focus();
+        return false;
+    }
+
     if(document.main.type.value=="hiring" && isNaN(document.main.rate.value)) {
         alert("Enter valid hourly rate!");
-        document.main.Postal.focus();
+        document.main.rate.focus();
         return false;
     }
 
     if(document.main.message.value=="") {
         alert( "Please enter your message" );
-        document.main.city.focus() ;
+        document.main.message.focus() ;
         return false;
     }
 
